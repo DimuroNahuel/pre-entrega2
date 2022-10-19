@@ -1,0 +1,187 @@
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.menu{
+    list-style-type: none;
+    padding: 10;
+    background-color: #092327;
+    border: medium solid #999;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background-color: #ef8354;
+}
+
+ 
+.ofertas{  
+    border-bottom: medium solid #999;
+    border-left: medium solid #999;
+    border-right: medium solid #999;
+    background-color: #092327;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ofertas a{
+    border-spacing: 25px;
+    border-top: medium solid #999;
+    background-color: #999;
+    border-right: solid 6px #999;
+    border-left: solid 7px #999;
+    padding: 1px;
+    width: 160px;
+}
+
+.contacto{
+    width: 450px;
+    margin: 10%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.contacto h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30;
+    margin-bottom: 20px;
+}
+
+.contacto input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.contacto textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.contacto #boton{
+    background-color: #092327;
+    color:#fff;
+    padding: 20px;
+}
+
+.contacto #boton:hover{
+    cursor:pointer;
+}
+
+.nosotros, .guia {    
+    width: 450px 990px;
+    margin: 10%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.nosotros h1{
+    color:#fff; 
+    text-align: center;
+   
+}
+
+.tituof {
+    border-top: medium solid #999;
+    border-left: medium solid #999;
+    border-right: medium solid #999;
+    background-color: #092327;
+    color: #fff;
+    text-align: center;
+    margin-top:110px;
+    font-size: 44px; 
+}
+
+body{
+    background-image: url(./IMAGENES/fondo.png);
+    background-size: 10rem;
+}
+
+.redes img{
+    width: 15%;
+}
+
+.catalogo{
+    position: block;
+    text-align: center;
+}
+
+.wrapper {    
+    display: grid; 
+    grid-template-areas: 'logo logo  '
+                        'menu menu '
+                        'tituof tituof '
+                        'ofertas ofertas '
+                        'nosotros nosotros '
+                        'contacto redes';
+
+    grid-template-columns: auto auto;
+    grid-template-rows: 40rem 0.5rem 10rem 15rem 31rem 33rem;
+    gap:2rem;
+    
+  }
+  .logo {
+   grid-area: logo;
+   background-image: url("./IMAGENES/logo.png");
+   
+
+  }
+  .menu {
+    grid-area: menu;
+   
+  }
+
+  .tituof {
+   grid-area: tituof;
+
+   
+  }
+  .ofertas {
+    grid-area: ofertas;
+  }
+
+  .nosotros, .guia{  
+    grid-area: nosotros;
+
+    
+  }
+  .contacto{  
+    grid-area: contacto;  
+  }
+
+  .redes{  
+    grid-area: redes;  
+  }
